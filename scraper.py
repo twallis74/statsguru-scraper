@@ -57,7 +57,7 @@ class Scraper:
         # This lets us know if we should continue to loop
         more_results = self.parse_page()
         while more_results:
-            print "Scraping page %s" % index
+            print ("Scraping page %s" % index)
             index += 1
             self.getpage(index)
             more_results = self.parse_page()
